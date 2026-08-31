@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   ArrowRight,
@@ -8,7 +8,6 @@ import {
   Code2,
   ExternalLink,
   GitBranch,
-  Github,
   Layers3,
   Lock,
   MonitorCog,
@@ -98,7 +97,7 @@ const experience = [
   {
     company: 'Paltech',
     role: 'DevOps Engineer',
-    period: 'Oct 2023 – Present',
+    period: 'Oct 2023 â€“ Present',
     points: [
       'Built and maintained Azure DevOps CI/CD pipelines across Dev, QA, UAT, and Production environments.',
       'Provisioned Azure environments using Terraform and Bicep to improve deployment consistency.',
@@ -110,7 +109,7 @@ const experience = [
   {
     company: 'EnergyTech Global',
     role: 'DevOps Engineer / Developer',
-    period: 'Dec 2022 – Sep 2023',
+    period: 'Dec 2022 â€“ Sep 2023',
     points: [
       'Built Azure DevOps automation for production data sanitization into non-production environments.',
       'Developed Python data masking workflows to remove PII before loading PostgreSQL test databases.',
@@ -143,7 +142,7 @@ function App() {
 
         <div className="hero-grid">
           <div>
-            <p className="eyebrow">Azure DevOps • Terraform • Kubernetes • CI/CD</p>
+            <p className="eyebrow">Azure DevOps â€¢ Terraform â€¢ Kubernetes â€¢ CI/CD</p>
             <h1>Rohan Sirimalla</h1>
             <h2>Azure DevOps Engineer building cloud automation and platform engineering projects.</h2>
             <p className="hero-copy">
@@ -199,7 +198,7 @@ function App() {
         <div className="info-card">
           <Cloud />
           <h3>Azure Services</h3>
-          <p>{azureServices.join(' • ')}</p>
+          <p>{azureServices.join(' â€¢ ')}</p>
         </div>
         <div className="info-card">
           <ServerCog />
@@ -263,7 +262,7 @@ function App() {
             <div className="timeline-item" key={item.company}>
               <div>
                 <h3>{item.role}</h3>
-                <p className="company">{item.company} • {item.period}</p>
+                <p className="company">{item.company} â€¢ {item.period}</p>
               </div>
               <ul>
                 {item.points.map((point) => (
@@ -296,11 +295,11 @@ function App() {
         <p className="eyebrow">Contact</p>
         <h2>Open to Azure DevOps, Cloud DevOps, Platform Engineering, and SRE roles.</h2>
         <p>
-          Add your email, LinkedIn, GitHub, and resume link here after the repository is live.
+          Add your email, LinkedIn, and resume link here after the repository is live.
         </p>
         <div className="contact-actions">
           <a className="secondary-btn" href="https://github.com/rohansirimalla" target="_blank" rel="noreferrer">
-            <Github size={18} /> GitHub <ExternalLink size={14} />
+            <GitBranch size={18} /> GitHub <ExternalLink size={14} />
           </a>
         </div>
       </section>
@@ -309,3 +308,4 @@ function App() {
 }
 
 export default App;
+
